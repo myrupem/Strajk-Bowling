@@ -1,0 +1,42 @@
+.hamburger-button {
+  all: unset;
+  z-index: 99999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #ec315a1f;
+}
+
+.hamburger-button__line-wrapper {
+  display: flex;
+  margin: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.hamburger-button__span-1,
+.hamburger-button__span-2,
+.hamburger-button__span-3 {
+  border-bottom: 2px solid #ec315a;
+  border-radius: 2px;
+}
+
+.hamburger-button__span-1 {
+  width: 28px;
+}
+
+.hamburger-button__span-2 {
+  width: 22px;
+}
+
+.hamburger-button__span-3 {
+  width: 15px;
+}

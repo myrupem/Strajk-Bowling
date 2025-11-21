@@ -1,0 +1,50 @@
+/* --- LABEL --- */
+.ShoeInputfield__label {
+  font-size: 12px;
+  color: #441d81;
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  padding: 0 6px;
+  background: #fff4f1;
+  z-index: 2;
+}
+
+/* --- INPUT GROUP --- */
+.ShoeInputfield__group {
+  position: relative;
+  margin: 1rem 0;
+}
+
+/* --- SELECT --- */
+.ShoeInputfield {
+  all: unset;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #441d81;
+  border-radius: 4px;
+  color: #222;
+  background: transparent;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+  appearance: none;
+}
+
+/* --- FOCUS --- */
+.ShoeInputfield:focus {
+  border-color: #ec315a !important;
+  box-shadow: 0 0 0 2px rgba(236, 49, 90, 0.15);
+}
+
+.ShoeInputfield__group:focus-within .ShoeInputfield__label {
+  color: #ec315a;
+  border-color: #ec315a;
+}
+
+/* --- OPTIONAL: pil på select --- */
+.ShoeInputfield {
+  background-image: url("data:image/svg+xml,%3Csvg fill='%23441d81' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px;
+}

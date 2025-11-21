@@ -1,0 +1,32 @@
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #1c1919;
+  color: #ec315a;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 9999;
+}
+
+.hamburger-menu.open {
+  left: 0;
+}
+
+.hamburger-menu__link-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.hamburger-menu__link {
+  all: unset;
+  font-family: var(--font-title);
+  font-size: 48px;
+  color: #ec315a;
+}

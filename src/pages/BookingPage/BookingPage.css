@@ -1,0 +1,150 @@
+/* --- LAYOUT --- */
+.bookingPage__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  gap: 1rem;
+}
+
+img {
+  height: 110px;
+}
+
+.bookingPage__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bookingPage__form .confirmButtonWrapper {
+  margin-top: 3rem;
+}
+
+.bookingPage__date-time-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.bookingPage__date-wrapper,
+.bookingPage__time-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* --- SUBTITLE WITH LINES --- */
+.bookingPage__subtitle {
+  font-family: var(--font-title);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.bookingPage__subtitle::before,
+.bookingPage__subtitle::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #441d81;
+}
+
+.bookingPage__subtitle span {
+  padding: 0 10px;
+  font-size: 24px;
+  background: #fff4f1;
+}
+
+/* --- LABEL --- */
+.bookingPage__label {
+  font-size: 12px;
+  color: #441d81;
+}
+
+/* --- INPUT GROUP --- */
+
+.bookingPage__input-group {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.bookingPage__input-group label[for="date"] {
+  background: #fff4f1;
+  padding: 0 6px;
+  z-index: 6;
+}
+
+.bookingPage__input-group .bookingPage__input,
+.bookingPage__input-group .react-datepicker-wrapper input {
+  all: unset;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #441d81;
+  border-radius: 4px;
+  color: #222;
+  background: transparent;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.bookingPage__input-group .bookingPage__label {
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  padding: 0 6px;
+  font-size: 12px;
+  color: #441d81;
+  background: #fff4f1;
+}
+
+.bookingPage__input-group .bookingPage__input:focus,
+.bookingPage__input-group .react-datepicker-wrapper input:focus {
+  border-color: #ec315a !important;
+  box-shadow: 0 0 0 2px rgba(236, 49, 90, 0.15);
+}
+
+.bookingPage__input-group:focus-within .bookingPage__label {
+  color: #ec315a;
+  border-color: #ec315a;
+}
+
+/* --- LANES SELECT INPUT --- */
+
+.bookingPage__lanesInput {
+  all: unset;
+  padding: 0.75rem;
+  border: 1px solid #441d81;
+  border-radius: 4px;
+  color: #222;
+  background: transparent;
+}
+
+/* --- TIME INPUT RESET --- */
+.bookingPage__input-group input[type="time"] {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #441d81;
+  border-radius: 4px;
+  color: #222;
+  background: transparent;
+  height: 45px;
+  cursor: pointer;
+}
+
+input[type="time"]::-webkit-inner-spin-button,
+input[type="time"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Ta bort klockikonen */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

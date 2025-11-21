@@ -1,0 +1,47 @@
+/* --- Ensure DatePicker input fills parent container --- */
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+/* --- Input inside DatePicker --- */
+.react-datepicker-wrapper input,
+.react-datepicker__input-container input {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid #441d81 !important;
+  padding: 0.75rem;
+  color: #222;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --- CALENDAR DROPDOWN --- */
+.react-datepicker {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  border-color: #441d81;
+  padding: 1rem;
+  font-family: var(--font-body);
+  z-index: 9999 !important;
+}
+
+.react-datepicker__header {
+  font-family: var(--font-body);
+  color: #ec315a;
+  border-color: #441d81;
+}
+
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+  margin-top: 0.5rem;
+}
+
+.react-datepicker__day {
+  color: #000;
+}
+
+.react-datepicker__day--selected {
+  background-color: #ec315a;
+  color: #fff;
+}
